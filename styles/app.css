@@ -40,6 +40,16 @@
 .role {
   margin-top: 15px;
 }
+
+@media only screen and (max-width: 680px) {
+  .portfolio_banner {
+    /* height: 100%; */
+    width: auto;
+
+    /* object-fit: contain; */
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -513,7 +523,6 @@ img {
   .portfolio__box:nth-child(2),
   .portfolio__box:nth-child(3) {
     flex-basis: 100%;
-    
   }
 }
 .portfolio__box:nth-child(2) .portfolio__img,
@@ -526,7 +535,6 @@ img {
   .portfolio__box:nth-child(2) .portfolio__img,
   .portfolio__box:nth-child(3) .portfolio__img {
     height: 24rem;
-    
   }
 }
 .portfolio__box:nth-child(2) .portfolio__img img,
@@ -612,7 +620,7 @@ img {
 }
 @media only screen and (max-width: 900px) {
   .about {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 .about__left {
