@@ -1,134 +1,505 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Richard Hendricks's Portfolio</title>
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Vattsal Portfolio / Resume Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Leven - Resume / CV / vCard Template" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, portfolio" />
+    <meta name="author" content="lmpixels" />
+    <link rel="shortcut icon" href="favicon.ico">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800;900&family=Kanit:wght@800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Icon-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
-    />
-    <!-- Animate CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
 
-    <!-- SplideJs Styles -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/css/splide.min.css"
-    />
-    <!-- App Styles -->
-    <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animations.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/dlmenu.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
   </head>
+
   <body>
-    <header class="header">
-      <div class="animate__animated animate__slideInDown">
-        <div class="container">
-          <h1 class="header__logo">
-            <a href="/"> R. </a>
-          </h1>
-          <nav class="navigation">
-            <ul>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+
+    <div class="lm-animated-bg"></div>
+    
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="preloader-spinner">
+        </div>
+      </div>
+    </div>
+    <!-- /Loading animation -->
+
+    <!-- Page Wrapper -->
+    <div class="page-wrapper bg-move-effect">
+      <div class="page-content site-content">
+
+        <!-- Site Header -->
+        <header id="site_header" class="header">
+          <div class="header-content">
+            <!-- Menu Button Icon -->
+            <div class="menu-button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!-- /Menu Button Icon -->
+                
+            <!-- Personal Photo or Site Logo -->
+            <!--<div class="header-photo">
+              <a href="index.html">
+                <img src="./img/profile_img.jpg" alt="image">
+              </a>
+            </div>-->
+            <!-- /Personal Photo or Site Logo -->
+
+            <!-- Text Logo -->
+            <div class="header-titles">
+              <a href="index.html">
+                <h2>AS</h2>
+              </a>
+            </div>
+            <!-- Text Logo -->
+          </div>
+          
+          <!-- Site Main Menu & Profile Card -->
+          <div class="site-menu profile-card-on flex-v-align dl-menuwrapper">
+            <!-- Profile Card -->
+            <div class="profile-card flex-v-align">
+              <div class="profile-card-block">
+               <!-- Profile Photo -->
+               <div class="profile-img">
+                <a href="#">
+                  <img src="./img/vattsal-profile-square-2.png" alt="image">
+                </a>
+              </div>
+              <!-- /Profile Photo -->
+              
+              <!-- Profile Titles -->
+              <a href="#">
+                <h3 class="site-title">Vattsal Bhatt</h3>
+              </a>
+                          
+              <h5 class="site-subtitle">MERN Developer</h5>
+              <!-- /Profile Titles -->
+                
+                <!-- Social Links -->
+                <div class="social-links">
+                  <ul>
+                    <li>
+                      <a href="https://github.com/vattsalbhatt" target="_blank">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/vattsalbhatt/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/vattsalbhatt" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://instagram.com/vattsalbhatt" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /Social Links -->
+              </div>
+            </div>
+            <!-- /Profile Card -->
+
+            <!-- Main Menu -->
+            <ul class="alan-classic-menu main-menu dl-menu dl-menuopen">
+              <li class="menu-item menu-item-has-children">
+                <a href="index.html">About Me</a>
+                <!-- <ul class="sub-menu">
+                  <li class="menu-item">
+                    <a href="index.html">About Me</a>
+                  </li>
+                  
+                  <li class="menu-item ">
+                    <a href="index-2.html">About Me 2</a>
+                  </li>
+                </ul> -->
+              </li>
+              
+              <li class="menu-item">
+                <a href="resume.html">Resume</a>
+              </li>
+
+              <li class="menu-item current-menu-item">
+                <a href="portfolio.html">Portfolio</a>
+              </li>
+
+              <!-- <li class="menu-item">
+                <a href="blog.html">Blog</a>
+              </li> -->
+              
+              <li class="menu-item">
+                <a href="contact.html">Contact</a>
+              </li>
             </ul>
-            <a class="btn btn--main" href="assets/resume.pdf" download>
-              <i class="bi bi-download"></i> Resume
-            </a>
-          </nav>
-          <div class="header__resume">
-            <a class="btn btn--main" href="assets/resume.pdf" download>
-              <i class="bi bi-download"></i> Resume
-            </a>
+            <!-- /Main Menu -->
           </div>
-          <div class="header__mobile">
-            <button id="navigation-button">
-              <i class="bi bi-list"></i>
-            </button>
+          <!-- /Site Main Menu & Profile Card -->
+        </header>
+        <!-- /Site Header -->
+
+        <!-- Right Sidebar -->
+        <div class="r-sidebar">
+          <div class="sidebar-button">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
-      </div>
-    </header>
+        
+        <div id="blog-sidebar" class="blog-sidebar">
+          <div class="blog-sidebar-content clearfix">
+            <div class="sidebar-item">
+              <div class="sidebar-title">
+                <h4>Recent Posts</h4>
+              </div>
+              <ul>
+                <li>
+                  <a href="#">Best Practices for Animated Progress Indicators</a>
+                </li>
+                
+                <li>
+                  <a href="#">Designing the Perfect Feature Comparison Table</a>
+                </li>
+                
+                <li>
+                  <a href="#">An Overview of E-Commerce Platforms</a>
+                </li>
+                
+                <li>
+                  <a href="#">Why I Switched to Sketch For UI Design</a>
+                </li>
+                
+                <li>
+                  <a href="#">Creative and Innovative Navigation Designs</a>
+                </li>
+              </ul>
+            </div>
 
-    <!-- Portfolio Single -->
-    <section class="portfolioSingle">
-      <div class="container">
-        <div class="portfolioSingle__img">
-          <img src="assets/portfolio-04.jpg" alt="Portfolio Thumbnail" />
+            <div class="sidebar-item"><div class="sidebar-title"><h4>Archives</h4></div>
+              <ul>
+                <li>
+                  <a href='#'>June 2020</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sidebar-item">
+              <div class="sidebar-title">
+                <h4>Categories</h4>
+              </div>
+              
+              <ul>
+                <li class="cat-item">
+                  <a href="#">Design</a>
+                </li>
+                
+                <li class="cat-item">
+                  <a href="#">E-Commerce</a>
+                </li>
+
+                <li class="cat-item">
+                  <a href="#">UI</a>
+                </li>
+                
+                <li class="cat-item">
+                  <a href="#">Uncategorized</a>
+                </li>
+                
+                <li class="cat-item">
+                  <a href="#">WordPress</a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
         </div>
-        <a href="#" class="portfolioSingle__link">
-          Live Link
-          <span>
-            <i class="bi bi-arrow-up-right-circle-fill"></i>
-          </span>
-        </a>
-        <h2 class="portfolioSingle__title">Three Dots Media Agency Website</h2>
-        <ul class="portfolioSingle__stacks">
-          <li>Python</li>
-          <li>Django</li>
-          <li>JavaScript</li>
-          <li>React</li>
-        </ul>
-        <div class="portfolioSingle__content">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi doloribus iusto nemo
-          error. Eum nam aspernatur vero laudantium reiciendis fugiat libero necessitatibus
-          molestiae? Mollitia dolores debitis iusto numquam. Velit, optio?
+        <!-- /Right Sidebar -->
 
-          <br />
-          <br />
+        <!-- Page Content -->
+        <div class="content-area single-page-area" data-animation="animated-section-rotateRoomBottomIn">
+          <div class="single-page-content">
+            <div class="content-wrapper">
+              <div class="page-title">
+                <h1>Portfolio</h1>
+              </div>
 
-          Lorem ipsum dolor <a href="#">Click Here</a> sit amet consectetur adipisicing elit.
-          Perferendis dolores a labore, fugit blanditiis asperiores? Cupiditate rerum aliquam ea
-          quia sed nulla est nemo et delectus, perspiciatis iste possimus enim autem aut id ipsa
-          natus voluptate ex excepturi facere, unde atque? Assumenda nam ipsum ullam, sint dolore
-          incidunt molestiae, culpa, aut blanditiis at dolorem? Inventore expedita obcaecati
-          sapiente porro similique blanditiis cupiditate beatae reprehenderit quis nam accusamus,
-          corporis facilis, pariatur at eaque suscipit! Incidunt voluptate tempora voluptates unde
-          et possimus molestias consequuntur odio, nobis ab beatae molestiae officiis quas
-          aspernatur optio porro assumenda quo mollitia explicabo iste dolore nihil!
+              <article class="page type-page">
+                <div class="entry-content">
 
-          <br />
-          <br />
+                  <div class="row">
+                    <div class=" col-xs-12 col-sm-12 ">
+                      <!-- Portfolio Content -->
+                      <div id="portfolio_content_q" class="portfolio-content">
 
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste ratione nam possimus!
-          Laudantium, aspernatur <a href="#">magni odit</a> cupiditate quo officia dolorum veritatis
-          debitis libero provident. Delectus quis minima quibusdam assumenda debitis dolorem labore
-          distinctio pariatur velit? Iste voluptatem iusto quasi consectetur a eius explicabo, fuga,
-          quos, eum facilis deserunt voluptas unde neque! Maxime laborum nihil recusandae animi
-          officia quae expedita illo.
+                        <ul class="portfolio-filters">
+                          <li class="active">
+                            <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
+                          </li>
+                          
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_detailed">Detailed</a>
+                          </li>
+                          
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_direct-url">Direct URL</a>
+                          </li>
+                          
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_image">Image</a>
+                          </li>
+                          
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_soundcloud">SoundCloud</a>
+                          </li>
+
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_video">Video</a>
+                          </li>
+                          
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_vimeo-video">Vimeo Video</a>
+                          </li>
+                          
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_youtube-video">YouTube Video</a>
+                          </li>
+                        </ul>
+        
+        
+                        <!-- Portfolio Grid -->
+                        <div class="portfolio-grid three-columns shuffle">
+
+                          <!-- Portfolio Item 1 -->
+                          <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                            <a href="portfolio-project-2.html" class="ajax-page-load">
+                              <div class="portfolio-item-img">
+                                <img src="./img/portfolio/1.jpg" alt="Full Project 2" title="" />
+                              </div>
+
+                              <div class="project-desc">
+                                <div class="project-desc-text">
+                                  <h4 class="name">Full Project 2</h4>
+                                  <span class="category">Detailed</span>
+                                </div>
+                              </div>
+                            </a>
+                          </figure>
+                          <!-- /Portfolio Item 1 -->
+
+                          <!-- Portfolio Item 2 -->
+                          <figure class="item lbvideo" data-groups='["category_all", "category_video", "category_youtube-video"]'>
+                            <a href="https://www.youtube.com/embed/F-1weFCiYBA" class="lightbox mfp-iframe" title="YouTube Video 2">
+                              <div class="portfolio-item-img">
+                                <img src="./img/portfolio/2.jpg" alt="YouTube Video 2" title="" />
+                              </div>
+
+                              <div class="project-desc">
+                                <div class="project-desc-text">
+                                  <h4 class="name">YouTube Video 2</h4>
+                                  <span class="category">Video, YouTube Video</span>
+                                </div>
+                              </div>
+                            </a>
+                          </figure>
+                          <!-- /Portfolio Item 2 -->
+
+                          <!-- Portfolio Item 3 -->
+                          <figure class="item lbimage" data-groups='["category_all", "category_image"]'>
+                            <a class="lightbox" title="Image 2" href="./img/portfolio/full/3.jpg">
+                              <div class="portfolio-item-img">
+                                <img src="./img/portfolio/3.jpg" alt="Image 2" title="" />
+                              </div>
+
+                              <div class="project-desc">
+                                <div class="project-desc-text">
+                                  <h4 class="name">Image 2</h4>
+                                  <span class="category">Image</span>
+                                </div>
+                              </div>
+                            </a>
+                          </figure>
+                          <!-- /Portfolio Item 3 -->
+
+                          <!-- Portfolio Item 4 -->
+                          <figure class="item lbaudio" data-groups='["category_all", "category_soundcloud"]'>
+                            <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221650664&#038;color=%23ff5500&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false&#038;show_teaser=true&#038;visual=true" class="lightbox mfp-iframe" title="SoundCloud Audio 1">
+                              <div class="portfolio-item-img">
+                                <img src="./img/portfolio/4.jpg" alt="SoundCloud Audio 1" title="" />
+                              </div>
+
+                              <div class="project-desc">
+                                <div class="project-desc-text">
+                                  <h4 class="name">SoundCloud Audio 1</h4>
+                                  <span class="category">SoundCloud</span>
+                                </div>
+                              </div>
+                            </a>
+                          </figure>
+                          <!-- /Portfolio Item 4 -->
+                 
+                          <!-- Portfolio Item 5 -->
+                          <figure class="item lbvideo" data-groups='["category_all", "category_video", "category_vimeo-video"]'>
+                            <a href="https://player.vimeo.com/video/158284739" class="lightbox mfp-iframe" title="Vimeo Video">
+                              <div class="portfolio-item-img">
+                                <img src="./img/portfolio/5.jpg" alt="Vimeo Video" title="" />
+                              </div>
+
+                              <div class="project-desc">
+                                <div class="project-desc-text">
+                                  <h4 class="name">Vimeo Video</h4>
+                                  <span class="category">Video, Vimeo Video</span>
+                                </div>
+                              </div>
+                            </a>
+                          </figure>
+                          <!-- /Portfolio Item 5 -->
+
+                          <!-- Portfolio Item 6 -->
+                          <figure class="item lbvideo" data-groups='["category_all", "category_video", "category_youtube-video"]'>
+                            <a href="https://www.youtube.com/embed/ZK8REu-8pGw" class="lightbox mfp-iframe" title="YouTube Video 1">
+                              <div class="portfolio-item-img">
+                                <img src="./img/portfolio/6.jpg" alt="YouTube Video 1" title="" />
+                              </div>
+
+                              <div class="project-desc">
+                                <div class="project-desc-text">
+                                  <h4 class="name">YouTube Video 1</h4>
+                                  <span class="category">Video, YouTube Video</span>
+                                </div>
+                              </div>
+                            </a>
+                          </figure>
+                          <!-- /Portfolio Item 6 -->
+
+                          <!-- Portfolio Item 7 -->
+                          <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                            <a href="portfolio-project-1.html" class="ajax-page-load">
+                              <div class="portfolio-item-img">
+                                <img src="./img/portfolio/7.jpg" alt="Full Project 1" title="" />
+                              </div>
+
+                              <div class="project-desc">
+                                <div class="project-desc-text">
+                                  <h4 class="name">Full Project 1</h4>
+                                  <span class="category">Detailed</span>
+                                </div>
+                              </div>
+                            </a>
+                          </figure>
+                          <!-- /Portfolio Item 7 -->
+
+                          <!-- Portfolio Item 8 -->
+                          <figure class="item direct" data-groups='["category_all", "category_direct-url"]'>
+                            <a target="_blank" href="https://themeforest.net/user/lmpixels/portfolio">
+                              <div class="portfolio-item-img">
+                                <img src="./img/portfolio/8.jpg" alt="Direct URL" title="" />
+                              </div>
+
+                              <div class="project-desc">
+                                <div class="project-desc-text">
+                                  <h4 class="name">Direct URL</h4>
+                                  <span class="category">Direct URL</span>
+                                </div>
+                              </div>
+                            </a>
+                          </figure>
+                          <!-- /Portfolio Item 8 -->
+
+                          <!-- Portfolio Item 9 -->
+                          <figure class="item lbimage" data-groups='["category_all", "category_image"]'>
+                            <a class="lightbox" title="Image 1" href="./img/portfolio/full/5.jpg">
+                              <div class="portfolio-item-img">
+                                <img src="./img/portfolio/9.jpg" alt="Image 1" title="" />
+                              </div>
+
+                              <div class="project-desc">
+                                <div class="project-desc-text">
+                                  <h4 class="name">Image 1</h4>
+                                  <span class="category">Image</span>
+                                </div>
+                              </div>
+                            </a>
+                          </figure>
+                          <!-- /Portfolio Item 9 -->
+                        </div>
+                        <!-- /Portfolio Content -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- /Footer -->
+          <footer class="site-footer clearfix">
+            <div class="footer-social">
+              <ul class="footer-social-links">
+                <li>
+                  <a href="https://github.com/vattsalbhatt" target="_blank"
+                    >GitHub</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/vattsalbhatt/"
+                    target="_blank"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a href="https://twitter.com/vattsalbhatt" target="_blank"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a href="https://instagram.com/vattsalbhatt" target="_blank"
+                    >Instagram</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-copyrights">
+              <p>© 2023. This page deployed with AWS pipeline.</p>
+            </div>
+          </footer>
+          <!-- /Footer -->
         </div>
-
-        <div class="portfolioSingle__linkBottom">
-          <a href="#" class="btn btn--main"> Live Link <i class="bi bi-arrow-right"></i> </a>
-        </div>
+        <!-- /Page Content -->
       </div>
-    </section>
+    </div>
+    <!-- /Page Wrapper -->
 
-    <footer class="footer">
-      <div class="footer__copyright">
-        <p>Made with &hearts; by <a href="/">devfolio.io</a></p>
-      </div>
-    </footer>
-
-    <!-- SplideJs v3 -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/js/splide.min.js"></script>
-    <!-- Scroll Reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- App Scripts -->
-    <script src="scripts/app.js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/jquery.shuffle.min.js'></script>
+    <script src='js/masonry.pkgd.min.js'></script>
+    <script src='js/owl.carousel.min.js'></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.dlmenu.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
